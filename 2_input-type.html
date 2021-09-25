@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lib/fontawesome-free-5.15.3-web/css/all.min.css" />
+    <title>Document</title>
+    <style>
+      .row {
+        margin-bottom: 10px;
+      }
+      .label-control {
+        color: blue;
+        display: inline-block;
+        width: 80px;
+      }
+      label.label-control {
+        cursor: pointer;
+      }
+      input, textarea , select, button{
+        outline: none;
+      }
+
+      .input-control{
+        border: 2px solid green;
+        padding: 8px 16px;
+        border-radius: 8px;
+      }      
+      #textarea {
+        /* font-size: 40px; */
+        width: 600px;
+      }
+
+      .input-control:focus{
+        background-color: lightgreen;
+        box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.267);
+      }
+      .input-control:disabled{
+        background-color: rgb(241, 241, 160);
+      }
+      .input-control:required{
+        border-color: red;
+      }
+
+      .input-control::placeholder{
+        color: rgba(47, 0, 255, 0.295);
+        font-weight: 900;
+        font-style: italic;
+        font-size: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <form >
+      <div class="row">
+        <span class="label-control">text</span>
+        <input class="input-control" name="text" value="my Value" readonly/>
+      </div>
+
+      <div class="row">
+        <!-- <Label for="id-value"></Label> -->
+
+        <label class="label-control" for="text">text</label>
+        <input class="input-control" id="text" type="text" name="text" value="My Value" maxlength="20" minlength="5" disabled/>
+      </div>
+
+      <div class="row">
+        <label class="label-control" for="password">password</label>
+        <input
+          class="input-control" id="password"
+          type="password"
+          name="password"
+          placeholder="Enter Password"
+          required
+        />
+      </div>
+      <div class="row">
+        <label class="label-control" for="email">email</label>
+        <input class="input-control" id="email" type="email" name="email" />
+      </div>
+      <div class="row">
+        <label class="label-control" for="tel">tel</label>
+        <input class="input-control" id="tel" type="tel" name="tel"  />
+      </div>
+      <div class="row">
+        <label class="label-control" for="number">number</label>
+        <input class="input-control" id="number" type="number" name="number" min="-10" max="10"/>
+      </div>
+      <div class="row">
+        <label class="label-control" for="range">range</label>
+        <input id="range" type="range" name="range" min="0" max="20"/>
+      </div>
+      <div class="row">
+        <label class="label-control" for="file">file</label>
+        <input class="input-control" id="file" type="file" name="file" disabled/>
+      </div>
+      <div class="row">
+        <label class="label-control" for="date">date</label>
+        <input class="input-control" id="date" type="date" name="date" />
+      </div>
+      <div class="row">
+        <label class="label-control" for="color">color</label>
+        <input class="input-control" id="color" type="color" name="color"  />
+      </div>
+      <div class="row">
+        <label class="label-control" for="checkbox1">checkbox1</label>
+        <input class="input-control" id="checkbox1" type="checkbox" name="checkbox1" checked/>
+        <label class="label-control" for="checkbox2">checkbox2</label>
+        <input class="input-control" id="checkbox2" type="checkbox" name="checkbox2"/>
+        <label class="label-control" for="checkbox3">checkbox3</label>
+        <input class="input-control" id="checkbox3" type="checkbox" name="checkbox3"/>
+      </div>
+      <div class="row">
+        <label class="label-control">
+          radio1
+          <input type="radio" name="radio" value="1" checked/>
+        </label>
+
+        <label class="label-control">
+          radio2
+          <input type="radio" name="radio" value="2"/>
+        </label>
+
+        <label class="label-control">
+          radio3
+          <input type="radio" name="radio" value="3"/>
+        </label>
+      </div>
+      <div class="row">
+        Gender :
+        <label class="label-control">
+          Male
+          <input type="radio" name="gender" value="male" checked />
+        </label>
+
+        <label class="label-control">
+          Female
+          <input type="radio" name="gender" value="female" />
+        </label>
+      </div>
+
+      <hr />
+      <div class="row">
+        <label class="label-control" for="select">select</label>
+        <select name="select" id="select">
+          <option >Option 1</option>
+          <option selected>Option 2</option>
+          <option >Option 3</option>
+          <option >Option 4</option>
+        </select>
+      </div>
+      <div class="row">
+        <label class="label-control" for="select-multi">select multi</label>
+        <select name="select_multi" id="select-multi" multiple>
+          <option selected>Option 1</option>
+          <option >Option 2</option>
+          <option >Option 3</option>
+          <option selected>Option 4</option>
+        </select>
+      </div>
+      <div class="row">
+        <label class="label-control" for="textarea">textarea</label>
+        <textarea name="textarea" id="textarea" rows="5" cols="40"></textarea>
+      </div>
+
+      <hr />
+      <div class="row">
+        <input type="submit" value="Send"/>
+        <input type="reset" />
+        <input type="button" value="Button" />
+        <hr />
+        <button type="submit">Send, <i class="fas fa-asterisk"></i></button>
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+      </div>
+    </form>
+
+  </body>
+</html>
