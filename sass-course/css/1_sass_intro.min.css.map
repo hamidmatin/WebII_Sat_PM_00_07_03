@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,QAAQ,AAAA,CAEN,KAAK,CAAE,IAAI,CACX,SAAS,CAAE,IAAI,CAChB",
+    "sources": [
+        "../scss/1_sass_intro.scss"
+    ],
+    "names": [],
+    "file": "1_sass_intro.min.css"
+}
