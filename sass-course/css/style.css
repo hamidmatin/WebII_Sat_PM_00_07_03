@@ -42,4 +42,116 @@ h3 {
 }
 
 /******* Nesting **********/
+/*
+  decendant selector
+  selector1{
+    selector2{
+                        
+    }
+  }
+  
+  child selector
+  selector1{
+    > selector2{
+                        
+    }
+  }
+
+  
+  sibling selector
+  selector1{
+    + selector2{
+                        
+    }
+  }
+  sibling selector
+  selector1{
+    ~ selector2{
+                        
+    }
+  }
+
+  parent selector &
+
+  selector1{
+    child & {
+
+    }
+    & + &{
+                        
+    }
+    &:hover{
+    }
+  }
+  ul{
+    nav &{
+    }
+  }
+  /// nav ul{..}
+
+*/
+nav {
+  background-color: #353535;
+  height: 40px;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #f1f1f1;
+  background-color: #353535;
+  display: block;
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+nav ul a:hover {
+  background-color: yellowgreen;
+}
+
+nav ul a:active {
+  background-color: #32cdab;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+h2 + p {
+  border-top: 1px solid gray;
+}
+
+p ~ span {
+  opacity: 0.8;
+}
+
+p ~ a {
+  color: gainsboro;
+}
+
+/************/
+p ~ span {
+  opacity: 0.8;
+}
+
+p ~ a {
+  color: gainsboro;
+}
+
+.card-link {
+  background-color: #fff;
+}
+
+.card-link + .card-link {
+  margin-left: 10px;
+}
 /*# sourceMappingURL=style.css.map */
