@@ -5,34 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sass Demo</title>
-    <link rel="stylesheet" href="sass-course/css/style.css" />
+    <!-- <link rel="stylesheet" href="sass-course/css/style.css" /> -->
+    <link rel="stylesheet" href="bootstrap-theme/css/bootstrap-theme.min.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
-      </ul>
-    </nav>
-    <h1>Sass Course</h1>
-    <p class="text-primary">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia itaque error dolore
-      tempora explicabo veritatis commodi, vero sed libero quibusdam optio tenetur impedit delectus
-      perferendis obcaecati voluptatem dicta aspernatur.
-    </p>
+    <div class="jumbotron text-center" style="margin-bottom: 0">
+      <h1>My First Bootstrap 4 Page</h1>
+      <p>Resize this responsive page to see the effect!</p>
+    </div>
 
-    <button class="btn-primary">Click</button>
-    <button class="btn-secondary">Click</button>
-    <div class="bg-primary">alakgfka</div>
-    <h2>Sample</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, praesentium natus tenetur
-      odio est molestias? Aliquid expedita quia repellat nam similique ea voluptate ab iste amet ex
-      aliquam, dignissimos accusamus?
-    </p>
-    <div class="my-extent-3 ">sds</div>
-    <div class="alert ">sds</div>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5" >
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>About Me</h2>
+          <h5>Photo of me:</h5>
+          <div class="fakeimg">Fake Image</div>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          <h3>Some Links</h3>
+          <p>Lorem ipsum dolor sit ame.</p>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <hr class="d-sm-none" />
+        </div>
+        <div class="col-sm-8">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <div class="fakeimg">Fake Image</div>
+          <p>Some text..</p>
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco.
+          </p>
+          <br />
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Sep 2, 2017</h5>
+          <div class="fakeimg">Fake Image</div>
+          <p>Some text..</p>
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom: 0">
+      <p>Footer</p>
+    </div>
+
+    <script src="lib/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

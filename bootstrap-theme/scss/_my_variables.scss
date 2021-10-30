@@ -1,0 +1,20 @@
+$primary: rgb(218, 109, 248);
+$enable-rounded: false;
+$enable-shadows: true;
+
+$spacer: 20px;
+
+$spacers: (
+      0: 0,
+      1: ($spacer * .25),
+      2: ($spacer * .5),
+      3: ($spacer * .75),
+      4: ($spacer * 1),
+      5: ($spacer * 1.25),
+      6: ($spacer * 1.5),
+      7: ($spacer * 1.75),
+      8: ($spacer * 2.25),
+      9: ($spacer * 2.5),
+      10: ($spacer * 2.75),
+      11: ($spacer * 3) 
+    );
