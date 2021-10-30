@@ -1,0 +1,46 @@
+/******** Dynamic Property adn selector name ******/
+$size: 20px;
+// $property-name: padding;
+// $property-name: padding-top;
+$property-name: margin-top;
+$property-name: width;
+
+.test-1{
+  // padding: $size;
+  // margin: $size;
+  // padding-top: $size;
+  /** dynamic property name ***/
+  #{$property-name}: $size;
+}
+
+
+$selector-name1: 'my-class2';
+$selector-name2: 'header';
+$selector-name3: 'footer';
+
+/**** dynamic selector name ***/
+.#{$selector-name1}{
+  #{$property-name}: $size;
+}
+
+#{$selector-name2}{
+  #{$property-name}: $size;
+}
+
+##{$selector-name3}{
+  #{$property-name}: $size;
+}
+
+@mixin alert($name, $color){
+  .alert-#{$name}{
+    background-color: lighten($color: $color, $amount: 20%);
+    color: $color;
+    border: 1px solid $color;
+    padding: 1em;
+  }
+}
+
+
+  @include alert($name: primary, $color: $primary);
+  @include alert($name: secondary, $color: $secondary);
+

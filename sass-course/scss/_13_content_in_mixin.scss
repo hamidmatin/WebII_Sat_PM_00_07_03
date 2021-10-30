@@ -1,0 +1,16 @@
+@mixin my-mixin-2($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  /** add by content **/
+  @content;
+}
+
+.my-class-1{
+  margin-top: 20px;
+  @include my-mixin-2(green, yellow);
+}
+.my-class-2{
+  @include my-mixin-2($color: red, $bg-color: green){
+    padding: 20px;
+  }
+}
