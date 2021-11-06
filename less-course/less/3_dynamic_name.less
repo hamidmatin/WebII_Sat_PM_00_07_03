@@ -1,0 +1,40 @@
+/******** dynamic_name ******/
+@selector: primary;
+@property: color;
+
+@images-folder: "/images";
+
+.btn-@{selector}{
+  @{property}: @primary-color;
+}
+.alert-@{selector}{
+  background-@{property}: @primary-color;
+  &::after{
+    content: @images-folder;
+  }
+}
+
+@images-folder: "/new-image";
+ 
+
+.icon{
+  @images-folder: "/pics";
+  background-image: url("@{images-folder}/bgdesert.jpg");
+  
+}
+
+@primary:  green;
+@secondary: blue;
+
+.section {
+  @my-color: primary;
+  .element {
+    color: @@my-color;
+  }
+}
+
+.btn{
+  padding: 20px;
+  color: dodgerblue;
+  border: 2px solid $color;
+}
